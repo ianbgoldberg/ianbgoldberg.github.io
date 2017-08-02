@@ -1,0 +1,299 @@
+/* Global */
+
+p, a {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  line-height: 1.25;
+  text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+a {
+  color: #fff;
+}
+
+p {
+  color: #64a2ba;
+}
+
+a:hover {
+  color: #64a2ba;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Background */
+
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #64a2ba;
+  background-image: url('../_images/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  margin-top: 100px;
+}
+
+/* Name */
+
+.home {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 30px 0;
+}
+
+/* Contact */
+
+.contact {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.contact .contact_info {
+  margin-left: 50px;
+}
+
+.contact .contact_info p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* About */
+
+.about {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about img {
+  width: auto;
+  height: 550px;
+  margin: 20px 0;
+}
+
+.about .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .text .about_text {
+  font-size: 20px;
+  width: 80%;
+}
+
+/* Projects */
+
+.projects {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-column-gap: 100px;
+  grid-row-gap: 100px;
+  margin: 100px 0px
+}
+
+.cell{
+  box-shadow: 0 0 100px 10px rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+
+.cell:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: none;
+  transform: scale(1.3);
+}
+
+.CITH {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.poli {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.grail {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.ideal {
+  grid-row: 1;
+  grid-column: 4;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+
+  .grid {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+  }
+
+  .CITH {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .poli {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .grail {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .ideal {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+}
+
+@media only screen and (max-width: 935px) {
+
+  .grid {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px;
+  }
+
+  .CITH {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .poli {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .grail {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .ideal {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .about .desktop {
+    display: none;
+  }
+
+  .about .mobile {
+    display: inherit;
+  }
+
+  .about img {
+    width: 60%;
+    height: auto;
+  }
+
+  .about p {
+    margin:  40px 0 0 0;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  .mobile {
+    display: inherit;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact p {
+    margin-bottom: 10px;
+  }
+
+  .contact .contact_info {
+    margin-left: 0px;
+    border-top: 1px solid #64a2ba;
+    padding-top: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 200px;
+    padding-bottom: 25px;
+  }
+
+  .CITH {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .poli {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .grail {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .ideal {
+    grid-row: 4;
+    grid-column: 1;
+  }
+
+  .about img {
+    width: 80%;
+  }
+}
