@@ -82,7 +82,7 @@ body {
 .about img {
   width: auto;
   height: 550px;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .about .text {
@@ -96,6 +96,7 @@ body {
 .about .text .about_text {
   font-size: 20px;
   width: 80%;
+  margin-top: 40px;
 }
 
 /* Projects */
@@ -233,10 +234,11 @@ body {
   .about img {
     width: 60%;
     height: auto;
+    margin: 40px 0 0 0;
   }
 
-  .about p {
-    margin:  40px 0 0 0;
+  .about .text .about_title {
+    margin-top: 40px;
   }
 
 }
