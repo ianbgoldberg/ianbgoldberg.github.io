@@ -1,7 +1,6 @@
 /* Global */
 
 p, a {
-  font-size: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   line-height: 1.25;
@@ -11,18 +10,45 @@ p, a {
 
 a {
   color: #fff;
+  font-size: 30px;
 }
 
 p {
   color: #64a2ba;
+  font-size: 40px;
 }
 
 a:hover {
-  color: #64a2ba;
+  color: #64a2ba!important;
 }
 
 .mobile {
   display: none;
+}
+
+.line {
+  width: 75%;
+  border: 0.5px solid #fff;
+}
+
+#weather
+{
+  color: #f77802;
+}
+
+#PYT
+{
+  color: #794ae2;
+}
+
+#adhoc
+{
+  color: #d404df;
+}
+
+#fotomatic
+{
+  color: #9dc20b;
 }
 
 /* Background */
@@ -126,6 +152,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5px;
   transition: all 0.3s linear;
 }
 
@@ -140,17 +167,17 @@ body {
   grid-column: 1;
 }
 
-.poli {
+.PYT {
   grid-row: 1;
   grid-column: 2;
 }
 
-.grail {
+.adhoc {
   grid-row: 1;
   grid-column: 3;
 }
 
-.ideal {
+.fotomatic {
   grid-row: 1;
   grid-column: 4;
 }
@@ -170,17 +197,17 @@ body {
     grid-column: 1;
   }
 
-  .poli {
+  .PYT {
     grid-row: 1;
     grid-column: 2;
   }
 
-  .grail {
+  .adhoc {
     grid-row: 1;
     grid-column: 3;
   }
 
-  .ideal {
+  .fotomatic {
     grid-row: 2;
     grid-column: 2;
   }
@@ -200,17 +227,17 @@ body {
     grid-column: 1;
   }
 
-  .poli {
+  .PYT {
     grid-row: 1;
     grid-column: 2;
   }
 
-  .grail {
+  .adhoc {
     grid-row: 2;
     grid-column: 1;
   }
 
-  .ideal {
+  .fotomatic {
     grid-row: 2;
     grid-column: 2;
   }
@@ -280,17 +307,17 @@ body {
     grid-column: 1;
   }
 
-  .poli {
+  .PYT {
     grid-row: 2;
     grid-column: 1;
   }
 
-  .grail {
+  .adhoc {
     grid-row: 3;
     grid-column: 1;
   }
 
-  .ideal {
+  .fotomatic {
     grid-row: 4;
     grid-column: 1;
   }
